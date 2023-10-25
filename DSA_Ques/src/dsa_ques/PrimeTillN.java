@@ -1,0 +1,29 @@
+package dsa_ques;
+
+import java.util.Scanner;
+
+public class PrimeTillN {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		int low = sc.nextInt();
+		int high = sc.nextInt();
+		
+		for(int n=low;n<=high;n++) {
+			int count=0;
+			for(int div=1;div<=n;div++) {
+				if(n%div==0) {
+					count++;
+					
+				}
+			}
+				if(count==2) {
+					System.out.println(n);
+				
+			}
+			
+		}
+
+	}
+
+}
