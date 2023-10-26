@@ -11,13 +11,13 @@ public class PrimeTillN {
 		
 		for(int n=low;n<=high;n++) {
 			int count=0;
-			for(int div=1;div<=n;div++) {
+			for(int div=2;div*div<=n;div++) {
 				if(n%div==0) {
 					count++;
 					
 				}
 			}
-				if(count==2) {
+				if(count==0) {
 					System.out.println(n);
 				
 			}
