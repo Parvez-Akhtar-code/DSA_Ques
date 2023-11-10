@@ -1,4 +1,4 @@
-package dsa_ques;
+package Functions;
 
 import java.util.Scanner;
 
